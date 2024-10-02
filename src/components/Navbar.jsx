@@ -11,15 +11,15 @@ function Navbar() {
                 <Earth className="h-8 w-8" />
                 <span>TravelBlog</span>
                 </div>
-                <ul className="hidden md:flex items-center space-x-10 px-[4rem]">
+                <ul className="nav-links md:flex items-center space-x-10 ">
                     <li>
-                        <Link to="/"><button className="text-xl cursor-pointer font-semibold transition duration-300 ease-in-out hover:text-purple-600">Home</button></Link>
+                    <Link to="/"><button className="text-xl font-semibold transition duration-300 ease-in-out hover:text-purple-600">Home</button></Link>
                     </li>
                     <li>
-                        <Link to="/destination"><button className=" text-xl cursor-pointer font-semibold transition duration-300 ease-in-out hover:text-purple-600">Destinations</button></Link>
+                    <Link to="/destination"><button className="text-xl font-semibold transition duration-300 ease-in-out hover:text-purple-600">Destination</button></Link>
                     </li>
                     <li>
-                        <Link to="/about"><button className=" text-xl cursor-pointer font-semibold transition duration-300 ease-in-out hover:text-purple-600">About</button></Link>
+                    <Link to="/about"><button className="text-xl font-semibold transition duration-300 ease-in-out hover:text-purple-600">About</button></Link>
                     </li>
                 </ul>
             </div>

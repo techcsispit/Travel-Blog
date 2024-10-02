@@ -11,7 +11,7 @@ const MainCard = () => {
                     <div className='p-4 sm:p-6 text-blue-100'>
                     <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">Exploring Kashmir</h2>
                     <p className="mb-4 text-sm sm:text-base">Discover the <b className='text-xl'>Paradise on Earth </b></p>
-                    
+                    <button>Read More</button>
                     </div>
                 </div>
                 </div>

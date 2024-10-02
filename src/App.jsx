@@ -17,7 +17,6 @@ function App() {
             <Route path="/destination" element={<Destination />} />
             <Route path="/about" element={<About />} />
         </Routes>
-        <MainCard />
       </Router>
     </>
   )
