@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default function BlogCard() {
   return (
     <div>
@@ -42,6 +43,7 @@ function Card({ image, title, desc, date }) {
           <div className="flex items-center text-sm text-gray-500 ">
             <span>{date}</span>
           </div>
+
         </div>
       </div>
     )
