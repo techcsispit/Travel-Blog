@@ -6,8 +6,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        'lavender' : '#E6E6FA'
-      }
+        'lavender' : '#E6E6FA',
+        'brown':'#c5b8a7',
+        'light':'#73736f'
+      },
     },
   },
   plugins: [],

@@ -1,6 +1,7 @@
 import React from 'react';
 import DestCard from '../components/DestCard';
 import CountryGrid from '../components/CountryGrid';
+import Footer from '../components/Footer';
 
 function Destination() {
     return (
@@ -14,6 +15,7 @@ function Destination() {
                 BROWSE BY COUNTRIES
             </h2>
             <CountryGrid />
+            <Footer />
         </div>
         </>
     );

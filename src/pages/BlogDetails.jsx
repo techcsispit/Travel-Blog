@@ -11,7 +11,7 @@ export default function BlogDetails() {
     "Zurich, Switzerland": {
       images: [
         "../src/assets/z-1.avif",
-        "../src/assets/h-1.jpg",
+        "../src/assets/z-1.jpg",
         "../src/assets/z-3.avif"
       ],
       description: "Zurich is the largest city in Switzerland, offering the perfect blend of urban life and scenic Alpine views.",
