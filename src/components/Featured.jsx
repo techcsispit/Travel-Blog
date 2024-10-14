@@ -8,7 +8,7 @@ export default function Featured() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8">Featured Destinations</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <FeaturedCard
-                image="src/assets/z-2.jpeg"
+                image="src/assets/z-1.jpg"
                 title="Zurich, Switzerland"
                 description="Lakeside charm, Alpine views in Swiss paradise."
               />
