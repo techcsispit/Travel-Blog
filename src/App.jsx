@@ -7,6 +7,7 @@ import Destination from './pages/Destination';
 import About from './pages/About';
 import MainCard from "./components/MainCard";
 import BlogDetails from "./pages/BlogDetails";
+import TravelStories from "./pages/TravelStories";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/destination" element={<Destination />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog/:title" element={<BlogDetails />} /> {/* adding a dynamic route for various blog posts */}
+       <Route path="/travel/:title" element={<TravelStories/>}/>
         </Routes>
       </Router>
       </div>
