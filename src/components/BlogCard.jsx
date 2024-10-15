@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 export default function BlogCard() {
@@ -40,9 +41,16 @@ function Card({ image, title, desc, date }) {
         <div className="p-4">
           <h3 className="text-xl font-semibold mb-2">{title}</h3>
           <p className="text-gray-600 mb-4">{desc}</p>
-          <div className="flex items-center text-sm text-gray-500 ">
-            <span>{date}</span>
+  <div className="mt-4 flex items-center justify-between  text-sm text-gray-700">
+         <div className=' flex items-center justify-between'> 
+          <span>{date}</span>
           </div>
+                  {/* Link to detailed blog page */}
+        <Link to={`/travel/${title}`} className="text-blue-500 mt-4 inline-block">
+          Read More
+        </Link>
+        </div>
+
 
         </div>
       </div>
