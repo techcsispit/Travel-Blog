@@ -11,7 +11,7 @@ export default function BlogDetails() {
     "Zurich, Switzerland": {
       images: [
         "../src/assets/z-1.avif",
-        "../src/assets/h-1.jpg",
+        "../src/assets/z-1.jpg",
         "../src/assets/z-3.avif"
       ],
       description: "Zurich is the largest city in Switzerland, offering the perfect blend of urban life and scenic Alpine views.",
@@ -138,19 +138,19 @@ export default function BlogDetails() {
       </Carousel>
 
       {/* Overview Section */}
-      <section className="mb-12">
+      <section className="mb-12 fade-in">
         <h2 className="text-2xl font-semibold mb-4">Overview</h2>
         <p className="text-lg text-gray-700 leading-relaxed">{blog.description}</p>
       </section>
 
-      {/* Things to Do Section - Visually enhanced */}
-      <section className="mb-12">
+      {/* Things to Do Section */}
+      <section className="mb-12 fade-in">
         <h2 className="text-2xl font-semibold mb-4">Things to Do</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {blog.thingsToDo.map((activity, idx) => (
             <div
               key={idx}
-              className="bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
+              className="bg-blue-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
             >
               <h3 className="text-xl font-bold text-blue-700 mb-2">Activity {idx + 1}</h3>
               <p className="text-gray-700">{activity}</p>
@@ -159,14 +159,14 @@ export default function BlogDetails() {
         </div>
       </section>
 
-      {/* Travel Tips Section - Enhanced style */}
-      <section className="mb-12">
+      {/* Travel Tips Section */}
+      <section className="mb-12 fade-in">
         <h2 className="text-2xl font-semibold mb-4">Travel Tips</h2>
         <div className="flex flex-col space-y-4">
           {blog.travelTips.map((tip, idx) => (
             <div
               key={idx}
-              className="bg-green-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
+              className="bg-green-100 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
             >
               <h3 className="text-xl font-bold text-green-700 mb-2">Tip {idx + 1}</h3>
               <p className="text-gray-700">{tip}</p>
@@ -176,12 +176,10 @@ export default function BlogDetails() {
       </section>
 
       {/* Our Experience Section */}
-      <section className="mb-12 bg-purple-100 p-6 rounded-lg shadow-lg">
+      <section className="mb-12 p-6 rounded-lg bg-purple-100 shadow-lg fade-in">
         <h2 className="text-2xl font-semibold mb-4">Our Experience</h2>
         <p className="text-lg text-gray-700 leading-relaxed">{blog.ourExperience}</p>
       </section>
-
-
     </div>
   )
 }
