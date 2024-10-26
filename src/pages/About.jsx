@@ -11,7 +11,7 @@ function About() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 py-10">
+    <div className="min-h-screen bg-gradient-to-br  py-10">
       <div className="max-w-5xl mx-auto px-6">
         {/* About Title with fade-in animation */}
         <h1

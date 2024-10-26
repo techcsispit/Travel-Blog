@@ -12,6 +12,7 @@ function Navbar() {
         {path: "/", link: "Home"},
         {path: "/destination", link: "Destination"},
         {path: "/about", link: "About"},
+        {path:'/faq',link:"FAQ"}
     ]
     
     return (
