@@ -126,3 +126,59 @@
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
+
+/* Custom Checkbox Styles */
+input[type="checkbox"] {
+  appearance: none; /* Remove default checkbox styles */
+  -webkit-appearance: none; /* Remove default checkbox styles for Safari */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4A5568; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Checked State */
+input[type="checkbox"]:checked {
+  background-color: #4A5568; /* Background color when checked */
+  border-color: #4A5568; /* Border color when checked */
+}
+
+/* Animation on Checkbox */
+input[type="checkbox"]:checked::after {
+  content: "✓"; /* Checkmark */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Checkmark color */
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Smooth Transition for Checkbox Items */
+li {
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: scale(1.02); /* Slight scaling effect on hover */
+}
+.checklist-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.checklist-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
