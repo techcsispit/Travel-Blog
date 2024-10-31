@@ -2,6 +2,8 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Carousel } from 'react-responsive-carousel' // added carousel library for adding carausels
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import LatestPosts from '../components/Latest-posts'
+import Footer from '../components/Footer'
 
 
 export default function BlogDetails() {
@@ -124,6 +126,7 @@ export default function BlogDetails() {
   }
 
   return (
+    <>
     <div className="container mx-auto px-4 py-12">
       {/* Title */}
       <h1 className="text-4xl font-bold mb-6 text-center">{title}</h1>
@@ -180,6 +183,9 @@ export default function BlogDetails() {
         <h2 className="text-2xl font-semibold mb-4">Our Experience</h2>
         <p className="text-lg text-gray-700 leading-relaxed">{blog.ourExperience}</p>
       </section>
+      <LatestPosts />
     </div>
+    <Footer />
+    </>
   )
 }
